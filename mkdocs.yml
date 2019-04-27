@@ -105,8 +105,7 @@ nav:
   - License: license.md
   
   - Cards:
-        - Longan Card: index.md
-        - BME280 Card: 1011008.md
+        - AAA Battery Card: 1016007.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
