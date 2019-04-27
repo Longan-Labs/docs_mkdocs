@@ -102,21 +102,21 @@ markdown_extensions:
 # Page tree
 nav:
   - About: index.md
-  - License: license.md
-  
+  - License: license.md  
+  - Electronic:
+        - IRduino: 1040001.md
+        - Heelight Core: 1040002.md
+        - Heelight Relay: 1040003.md
+        - Keyboard: 1040004.md
   - Cards:
         - AAA Battery Card: 1016007.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
-        - Serial CAN Bus: can_bus.md
-        - OBD-II CAN-BUS Development Kit: obd_kit.md
+        - Serial CAN Bus Module: 1030001.md
+        - OBD-II CAN-BUS Development Kit: 1030002.md
 
-  - Arduino:
-        - IRduino: IRduino.md
-        - Heelight Core: heelight_core.md
-        - Heelight Relay: relay.md
-        - Keyboard: Keyboard.md
+
 
 
 # Google Analytics
