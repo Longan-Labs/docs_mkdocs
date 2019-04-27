@@ -102,14 +102,23 @@ markdown_extensions:
 # Page tree
 nav:
   - About: index.md
-  - OBD-II CAN Bus GPS Development Kit: 1030003.md
-  - IRduino: IRduino.md
-  - Serial CAN Bus: can_bus.md
-  - Heelight Core: heelight_core.md
-  - Heelight Relay: relay.md
-  - OBD-II CAN-BUS Development Kit: obd_kit.md
-  - Keyboard: Keyboard.md
   - License: license.md
+  
+  - Cards:
+        - Longan Card: index.md
+        - BME280 Card: 1011008.md
+
+  - CAN Bus:
+        - OBD-II CAN Bus GPS Development Kit: 1030003.md
+        - Serial CAN Bus: can_bus.md
+        - OBD-II CAN-BUS Development Kit: obd_kit.md
+
+  - Arduino:
+        - IRduino: IRduino.md
+        - Heelight Core: heelight_core.md
+        - Heelight Relay: relay.md
+        - Keyboard: Keyboard.md
+
 
 # Google Analytics
 google_analytics:
