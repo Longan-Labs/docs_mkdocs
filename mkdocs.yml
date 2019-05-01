@@ -111,6 +111,7 @@ nav:
   - Cards:
         - AAA Battery Card: 1016007.md
         - Carduino 32U4: 1013007.md
+        - Game Board: 1017008.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
