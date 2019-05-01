@@ -110,6 +110,7 @@ nav:
         - Keyboard: 1040004.md
   - Cards:
         - AAA Battery Card: 1016007.md
+        - Carduino 32U4: 1013007.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
