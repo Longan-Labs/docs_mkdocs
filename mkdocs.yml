@@ -109,6 +109,7 @@ nav:
         - Heelight Relay: 1040003.md
         - Keyboard: 1040004.md
   - Cards:
+        - Cards System Summary: cards-system-summary.md
         - AAA Battery Card: 1016007.md
         - Carduino 32U4: 1013007.md
         - Game Board: 1017008.md
