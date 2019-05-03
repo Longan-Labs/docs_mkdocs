@@ -30,6 +30,9 @@ You can use Longan Cards with following Longan boards.
 
 Each card has a factory default I2C address can be found on the back of the card.
 
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1013007/i2c-address.png)
+
+
 ## ***Cards and Boards***
 
 Following table presents the type, I2C address, and communication protocol of each Longan card.
