@@ -5,7 +5,7 @@ name: Cards System Summary
 
 ## ***Introduction***
 
-![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1013007/all-cards.png)
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/CardsSystemSummary/all-cards.png)
 
 **'Longan Cards'** is a unique open source development platform developed by Longan Labs. As a plug and play development platform, Longan cards allow you to quicky build wide array of prototypes and applications in no time. A full set of Arduino libraries and plenty of example codes are available to play with Longan cards platform.
 
@@ -28,9 +28,9 @@ You can use Longan Cards with following Longan boards.
 * Sensor board
 * Pi Hap
 
-Each card has a factory default I2C address can be found on the back of the card.
+All cards that support I2C communication protocol comes with a unique factory default I2C address can be found on the back of the card.
 
-![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1013007/i2c-address.png)
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/CardsSystemSummary/i2c-address.png)
 
 
 ## ***Cards and Boards***
@@ -76,9 +76,9 @@ On the back side of the temperature card, you also can find some pin numbers pri
 
 The gold fingers of each Longan card exposes all or subset of pins shown in the following figure.
 
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/CardsSystemSummary/pins.png)
 
-
-### ***GPIO pins***
+### ***GPIO Pins***
 This is the general purpose I/O pin set for the Carduino. GPIO consists of digital, analog, I2C, SPI, and UART pins. Most pins can do PWM output. Also, all pins can be used as interrupt pins.
 
 * **Digital** (Front: pin #9, #11, #21 / Back: pin #10, #12, #22)
@@ -124,8 +124,10 @@ A card can be plugged into an edge connector slot of one of the following Longan
 
 When you plugging, the white arrow head printed on the card should be pointing toward the white arrow head printed near the edge connector slot of the board. Once plugged, it can communicate with the Carduino through the I2C bus line of the board. It will also connect to the common power bus of the board.
 
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/CardsSystemSummary/1016007-AAA-battery-card-switch-on.jpg)
 
-Some of the Longan cards use I2C interface to communicate with the Carduino. Following table presents the typical I2C register map of a Longan card.
+## ***I2C in Depth***
+Some of the Longan cards (all sensor, actuator, and communication cards) use I2C interface to communicate with the Carduino. They use I2C for read/write data and share the same I2C register. This allows you to use a single code to read data from all the sensor cards. Following table presents the typical I2C register map of a Longan card.
 
 Address | Name            | Type  | Reset Value | Lenght (Byte) | Description                   |
 ------- | ----------------| ----- | ----------- | ------------- | ------------------------------|
@@ -141,4 +143,73 @@ Address | Name            | Type  | Reset Value | Lenght (Byte) | Description   
 0X35    | VALUE_5         | R     | \           | 4             | Sensor 5                      |
 ...     |                 |       |             |               |                               |
 
+### ***Register Definitions***
 
+**Register 0x01 – DEVID (Read Only)**
+
+Card ID.
+
+*Return: 1 byte*
+
+
+**Register 0x02 - SENSOR_CNT (Read Only)**
+
+Number of sensors on the board. As an example, the BME280 card has 4 sensors:
+temperature, humidity, pressure and altitude. Therefore the SENSOR_CNT value for BME280 card is 4.
+
+*Return: 1 byte*
+
+
+**Register 0x03 - SEN_NAME_LEN（Read Only)**
+
+Length of the card name.
+
+*Return: 1 byte*
+
+
+**Register 0x04 – ADDR (Read/Write)**
+
+I2C Address of the card.
+
+*Return: 1 byte*
+
+*Write: 1 byte*
+
+
+**Register 0x10 – NAME (Read Only)**
+
+Name of the card as a string, max 20 bytes.
+
+*Return 1~20 byte(s)*
+
+
+**Register 0x11 – SKU (Read Only)**
+
+SKU of the card
+
+*Return: 4 bytes*
+
+
+**Register 0x12 – VERSION (Read Only)**
+
+Version
+
+*Return: 4 bytes*
+
+
+**Register 0x30-0x3F: VALUE_n**
+
+Sensor value
+
+*Return: 6 bytes, define as below:*
+
+1        | 2    | 3    | 4    | 5    | 6    |
+-------- | ---- | ---- | ---- | ---- | ---- |
+DTA_TYPE | VAL0 | VAL1 | VAL2 | VAL3 | UNIT |
+
+
+DTA_TYPE:
+
+Float: TYPE_FLOAT
+
+Int: DTA_TYPE_INT
