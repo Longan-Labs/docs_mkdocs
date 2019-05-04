@@ -114,6 +114,7 @@ nav:
         - Carduino 32U4: 1013007.md
         - Game Board: 1017008.md
         - Temperature Card: 1011001.md
+        - Buzzer Card: 1012002.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
