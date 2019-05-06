@@ -115,6 +115,7 @@ nav:
         - Game Board: 1017008.md
         - Temperature Card: 1011001.md
         - Buzzer Card: 1012002.md
+        - Light Sensor Card: 1011010.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
