@@ -117,6 +117,7 @@ nav:
         - Buzzer Card: 1012002.md
         - Light Sensor Card: 1011010.md
         - Extension Board: 1017002.md
+        - Sensor Display Board: 1017007.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
