@@ -119,6 +119,8 @@ nav:
         - Extension Board: 1017002.md
         - Sensor Display Board: 1017007.md
         - BME280 Card: 1011008.md
+        - OLED Display Card: 1014001.md
+        - Rotary Angle Card: 1011007.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
