@@ -121,6 +121,7 @@ nav:
         - BME280 Card: 1011008.md
         - OLED Display Card: 1014001.md
         - Rotary Angle Card: 1011007.md
+        - Programmer Card: 1016006.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
