@@ -123,6 +123,8 @@ nav:
         - Rotary Angle Card: 1011007.md
         - Programmer Card: 1016006.md
         - Carduino 328: 1013001.md
+        - Button Input Card: 1011027.md
+        - IR Receiver Card: 1011029.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
