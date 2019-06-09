@@ -129,6 +129,7 @@ nav:
         - PIR Sensor Card: 1011003.md
         - RTC Card: 1011012.md
         - 9-Dof Sensor Card: 1011021.md
+        - Motor Driver Card: 1012003.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
