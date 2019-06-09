@@ -127,6 +127,7 @@ nav:
         - IR Receiver Card: 1011029.md
         - Sound Sensor Card: 1011002.md
         - PIR Sensor Card: 1011003.md
+        - RTC Card: 1011012.md
 
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
