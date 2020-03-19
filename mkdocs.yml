@@ -108,6 +108,7 @@ nav:
         - Heelight Core: 1040002.md
         - Heelight Relay: 1040003.md
         - Keyboard: 1040004.md
+        - AHT20 Temp&Humi Sensor: 1040006.md
         - GPS/BDS Module: 1040005.md
         
   - Cards:
