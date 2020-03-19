@@ -34,8 +34,8 @@ copyright: 'Copyright &copy; 2017 Longan Labs'
 
 # Configuration
 theme:
-  name: null
-  custom_dir: material
+  name: 'material'
+  #custom_dir: material
 
   # 404 page
   static_templates:
@@ -108,6 +108,8 @@ nav:
         - Heelight Core: 1040002.md
         - Heelight Relay: 1040003.md
         - Keyboard: 1040004.md
+        - GPS/BDS Module: 1040005.md
+        
   - Cards:
         - Cards System Summary: cards-system-summary.md
         - AAA Battery Card: 1016007.md
@@ -136,6 +138,7 @@ nav:
   - CAN Bus:
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
         - Serial CAN Bus Module: 1030001.md
+        - Serial CAN Lite: 1030011.md
         - OBD-II CAN-BUS Development Kit: 1030002.md
         - CANBed - Arduino CAN Bus Development Kit: 1030008.md
 
