@@ -99,6 +99,10 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+extra_javascript:
+  - 'javascripts/extra.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  
 # Page tree
 nav:
   - About: index.md
