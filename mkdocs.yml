@@ -145,6 +145,7 @@ nav:
         - OBD-II CAN-BUS Development Kit: 1030002.md
         - OBD-II CAN Bus GPS Development Kit: 1030003.md
         - CANBed - Arduino CAN Bus Development Kit: 1030008.md
+        - CANBed FD - Arduino CAN-FD Development Kit: 1030009.md
         - Serial CAN Lite: 1030011.md
         - CAN-FD Shield: 1030012.md
 
