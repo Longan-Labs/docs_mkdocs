@@ -114,6 +114,7 @@ nav:
         - Keyboard: 1040004.md
         - AHT20 Temp&Humi Sensor: 1040006.md
         - GPS/BDS Module: 1040005.md
+        - AAA Battery Shield: 1040007.md
         
   - Cards:
         - Cards System Summary: cards-system-summary.md
