@@ -106,7 +106,19 @@ extra_javascript:
 # Page tree
 nav:
   - About: index.md
-  - License: license.md  
+  - License: license.md
+  
+  - CAN Bus:
+        - Serial CAN Bus Module: 1030001.md
+        - CANBed V1: 1030008.md
+        - CANBed FD: 1030009.md
+        - CANBed M0: 1030014.md
+        - CANBed M4: 1030013.md
+        - OBD-II CAN-BUS Development Kit: 1030002.md
+        - OBD-II CAN Bus GPS Development Kit: 1030003.md
+        - Serial CAN Lite: 1030011.md
+        - CAN-FD Shield: 1030012.md
+        
   - Electronic:
         - IRduino: 1040001.md
         - Heelight Core: 1040002.md
@@ -116,6 +128,7 @@ nav:
         - GPS/BDS Module: 1040005.md
         - AAA Battery Shield: 1040007.md
         - Longan Core 01: 1040009.md
+        - Squame Ethernet: 1040009.md
         
   - Cards:
         - Cards System Summary: cards-system-summary.md
@@ -141,16 +154,6 @@ nav:
         - Motor Driver Card: 1012003.md
         - Relay Card: 1012001.md
         - Line Finder Card: 1011032.md
-
-  - CAN Bus:
-        - Serial CAN Bus Module: 1030001.md
-        - OBD-II CAN-BUS Development Kit: 1030002.md
-        - OBD-II CAN Bus GPS Development Kit: 1030003.md
-        - CANBed - Arduino CAN Bus Development Kit: 1030008.md
-        - CANBed FD - Arduino CAN-FD Development Kit: 1030009.md
-        - Serial CAN Lite: 1030011.md
-        - CAN-FD Shield: 1030012.md
-        - CANBed M4: 1030013.md
 
 
 # Google Analytics
