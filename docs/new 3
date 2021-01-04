@@ -1,0 +1,15 @@
+
+const int pinBtn = 11;
+const int pinLed = 13;
+
+void setup()
+{
+    pinMode(pinBtn, INPUT_PULLUP);
+    pinMode(pinLed, OUTPUT);
+}
+
+void loop()
+{
+    int ledst = 1-digitalRead(pinBtn);
+    digitalWrite(pinLed, ledst);
+}
