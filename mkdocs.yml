@@ -118,6 +118,7 @@ nav:
         - OBD-II CAN Bus GPS Dev Kit: 1030003.md
         - Serial CAN Lite: 1030011.md
         - CAN-FD Shield: 1030012.md
+        - OBD-II RF Dev Kit: 1030015.md
         
   - Electronic:
         - IRduino: 1040001.md
@@ -128,7 +129,7 @@ nav:
         - GPS/BDS Module: 1040005.md
         - AAA Battery Shield: 1040007.md
         - Longan Core 01: 1040009.md
-        - Squame Ethernet: 1050001.md
+        - Squama Ethernet: 1050001.md
         
   - Cards:
         - Cards System Summary: cards-system-summary.md
