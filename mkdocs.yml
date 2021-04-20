@@ -119,6 +119,7 @@ nav:
         - Serial CAN Lite: 1030011.md
         - CAN-FD Shield: 1030012.md
         - OBD-II RF Dev Kit: 1030015.md
+        - CAN Bus Shield: 1030016.md
         
   - Electronic:
         - IRduino: 1040001.md
