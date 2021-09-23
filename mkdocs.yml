@@ -21,7 +21,7 @@
 # Project information
 site_name: Longan Docs
 site_description: Docs of Longan Labs
-site_author: Loovee
+site_author: Stephen Lo
 site_url: https://longan-labs.cc
 
 # Repository
@@ -56,8 +56,8 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/images/favicon.png
-  logo:
-    icon: "\uE80C"
+#  logo:
+#    icon: "\uE80C"
 
 # Customization
 #extra:
@@ -70,6 +70,11 @@ theme:
 #      link: https://twitter.com/squidfunk
 #    - type: linkedin
 #      link: https://linkedin.com/in/squidfunk
+
+extra:
+  analytics:
+    provider: google
+    property: UA-101995557-1
 
 # Extensions
 markdown_extensions:
@@ -162,6 +167,6 @@ nav:
 
 
 # Google Analytics
-google_analytics:
-  - !!python/object/apply:os.getenv ["UA-101948128-1"]
-  - auto
+# google_analytics:
+#   - !!python/object/apply:os.getenv ["UA-101948128-1"]
+#   - auto
