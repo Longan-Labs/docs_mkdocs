@@ -110,24 +110,27 @@ extra_javascript:
   
 # Page tree
 nav:
-  - About: index.md
-  - License: license.md
+  - ABOUT: 
+        - ABOUT: index.md
+        - LICENSE: license.md
   
-  - CAN Bus:
-        - Serial CAN Bus Module: 1030001.md
-        - I2C CAN Bus Module: 1030017.md
-        - CANBed V1: 1030008.md
-        - CANBed FD: 1030009.md
-        - CANBed M0: 1030014.md
-        - CANBed M4: 1030013.md
-        - OBD-II CAN-BUS Dev Kit: 1030002.md
-        - OBD-II CAN Bus GPS Dev Kit: 1030003.md
-        - Serial CAN Lite: 1030011.md
-        - CAN-FD Shield: 1030012.md
-        - OBD-II RF Dev Kit: 1030015.md
-        - CAN Bus Shield: 1030016.md
+  - CAN-BUS:
+        - SERIAL CAN BUS MODULE: 1030001.md
+        - I2C CAN BUS MODULE: 1030017.md
+        - CANBED V1: 1030008.md
+        - CANBED FD: 1030009.md
+        - CANBED M0: 1030014.md
+        - CANBED M4: 1030013.md
+        - CANBED 2040: 1030018.md
+        - OBD-II CAN-BUS DEV KIT: 1030002.md
+        - OBD-II CAN BUS GPS DEV KIT: 1030003.md
+        - SERIAL CAN LITE: 1030011.md
+        - CAN-FD SHIELD: 1030012.md
+        - OBD-II RF DEV KIT: 1030015.md
+        - CAN BUS SHIELD: 1030016.md
         
-  - Electronic:
+        
+  - ELECTRONIC:
         - IRduino: 1040001.md
         - Heelight Core: 1040002.md
         - Heelight Relay: 1040003.md
@@ -140,7 +143,7 @@ nav:
         - Squama Ethernet with CAN FD: 1050003.md
         - Serial RF Module: 1040010.md
         
-  - Cards:
+  - CARDS:
         - Cards System Summary: cards-system-summary.md
         - AAA Battery Card: 1016007.md
         - Carduino 32U4: 1013007.md
