@@ -121,7 +121,8 @@ nav:
         - CANBED FD: 1030009.md
         - CANBED M0: 1030014.md
         - CANBED M4: 1030013.md
-        - CANBED 2040: 1030018.md
+        - CANBED RP2040: 1030018.md
+        - CANBED DUAL: 1030019.md
         - OBD-II CAN-BUS DEV KIT: 1030002.md
         - OBD-II CAN BUS GPS DEV KIT: 1030003.md
         - SERIAL CAN LITE: 1030011.md
