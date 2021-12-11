@@ -125,12 +125,11 @@ nav:
         - CANBED DUAL: 1030019.md
         - OBD-II CAN-BUS DEV KIT: 1030002.md
         - OBD-II CAN BUS GPS DEV KIT: 1030003.md
-        - SERIAL CAN LITE: 1030011.md
+#        - SERIAL CAN LITE: 1030011.md
         - CAN-FD SHIELD: 1030012.md
         - OBD-II RF DEV KIT: 1030015.md
         - CAN BUS SHIELD: 1030016.md
-        
-        
+              
   - ELECTRONIC:
         - IRduino: 1040001.md
         - Heelight Core: 1040002.md
