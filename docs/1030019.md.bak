@@ -1,0 +1,323 @@
+---
+sku: 1030019
+name: CANBed Dual
+---
+
+## ***Introduction***
+--------------------------
+
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1030019/main.png)
+
+CANBed Dual is a CAN Bus development board with 2 independent CAN FD interface based on RP2040. RP2040 has **2MB** of Flash and **264KB** of RAM. The operating frequency is up to **133MHz**, which is suitable for most embedded applications.
+
+CANBed Dual uses the GD32E103CBT6 as the CAN controller. There is a Micro USB connector on the board, through which you can program the board or supply power to the board. There are one I2C, one UART, one SPI interface, 3 analog input interfaces and 8 digital IO on the board.
+
+There's a 6PIN Terminal for connecting CAN Bus interface. The voltage input range of the CAN interface is 4.5-28V, which can provide a stable 5V/1A output.
+
+!!!Note
+    For transportation considerations, the plug-in components of the kit are not soldered by default. After you receive the kit, you need to do some soldering work. If necessary, you can also contact info@longan-labs.cc after purchasing the board, then we can send it to you after the board is soldered well.
+
+
+### ***Application Ideas***
+
+With CANBed Dual, you can，
+
+1. To learn CAN Bus communication
+2. To build product prototypes. After you complete the product prototype, we can help you integrate it into a product and assist you in production
+3. To read the data from the car
+4. As a part of your product, you don't need to design the MCU and CAN Bus separately, only need to complete other hardware design
+
+### ***CANBed Family***
+
+Currently we have 6 CANBeds, you can choose the right one according to your needs.
+
+|**VRESION**|CANBed V1|CANBed FD|CANBed M0|CANBed M4|CANBed RP2040|CANBed Dual|
+|--|---------|---------|---------|---------|----|-----|
+|**MCU**|Atmega32U4|Atmega32U4|ATSAMD21G18|ATSAME51G19A|RP2040|RP2040|
+|**CORE**|AVR 8 bit|AVR 8 bit|ARM Cortex M0+ 32bit|ARM Cortex M4 32bit|Dual ARM Cortex-M0+|Dual ARM Cortex-M0+|
+|**PROTOCOL**|CAN2.0|CANFD & CAN2.0|CAN2.0|CANFD & CAN2.0|CAN2.0|CANFD & CAN2.0|
+|**CLOCK**|16MHz|16MHz|48MHz|133MHz|133MHz|133MHz|
+|**FLASH**|32KB|32KB|256KB|2MKB|2MKB|2MKB|
+|**RAM**|2.5KB|2.5KB|32KB|192KB|264KB|264KB|
+|**PRICE**|$24.9|$29.9|EoL|$49.9|$15.9|$24.9|
+|**LINK**|[GET ONE](https://www.longan-labs.cc/1030008.html)|[GET ONE](https://www.longan-labs.cc/1030009.html)|[GET ONE](https://www.longan-labs.cc/1030014.html)|[GET ONE](https://www.longan-labs.cc/1030013.html)|[GET ONE](https://www.longan-labs.cc/1030018.html)|[GET ONE](https://www.longan-labs.cc/1030019.html)|
+
+!!!Note
+    The above price may not be the latest price, please refer to the price on the product page.
+
+## ***CAN BUS PRODUCTS LIST OF LONGAN LABS***
+--------------------------
+
+[![](https://www.longan-labs.cc/media/wysiwyg/CAN_BUS_PRODUCT.png)](https://www.longan-labs.cc/blog/post/can-bus-product-summary/)
+
+We have made a lot of can bus products, you can get more information through the following list, so as to choose a product suitable for you.
+
+|PRODUCT NAME|LINK|PRICE|MCU|CHIP|PROTOCOL|
+|------------|----|-----|---|----|--------|
+|Serial CAN Bus Module|[LINK](https://www.longan-labs.cc/1030001.html)|$19.9|ATMEGA168PA|MCP2515|CAN2.0|
+|I2C CAN Bus Module|[LINK](https://www.longan-labs.cc/1030017.html)|$19.9|ATMEGA168PA|MCP2515|CAN2.0|
+|OBD-II Serial CAN Bus Dev Kit|[LINK](https://www.longan-labs.cc/1030002.html)|$20.9|ATMEGA168PA|MCP2515|CAN2.0|
+|OBD-II CAN Bus GPS Dev Kit|[LINK](https://www.longan-labs.cc/1030003.html)|$29.9|ATMEGA32U4|MCP2515|CAN2.0|
+|OBD-II CAN Bus Basic Dev Kit|[LINK](https://www.longan-labs.cc/1030007.html)|$24.9|ATMEGA32U4|MCP2515|CAN2.0|
+|CAN-FD Shield|[LINK](https://www.longan-labs.cc/1030012.html)|$19.9|NO MCU|MCP2517FD|CAN-FD|
+|CAN Bus Shield|[LINK](https://www.longan-labs.cc/1030016.html)|$9.9|NO MCU|MCP2515|CAN2.0|
+|CANBed|[LINK](https://www.longan-labs.cc/1030008.html)|$24.9|ATMEGA32U4|MCP2515|CAN2.0|
+|CANBed-FD|[LINK](https://www.longan-labs.cc/1030009.html)|$29.9|ATMEGA32U4|MCP2517FD|CAN-FD|
+|CANBed M4|[LINK](https://www.longan-labs.cc/1030013.html)|$49.9|ATSAME51|-|CAN-FD|
+|OBD-II RF Dev Kit|[LINK](https://www.longan-labs.cc/1030015.html)|$19.9|ATmega168PA|MCP2515|CAN2.0|
+
+!!!Note
+    The above price may not be the latest price, please refer to the price on the product page.
+
+## ***Features***
+--------------------------
+
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1030019/Details_of_CANBed-21.jpg)
+
+* Powerful RP2040 processor
+* 2 Independent CAN FD interface
+* Up to 5Mb/s CAN FD baudrate
+* 2x3 Pin SPI Interface
+* 2x9 Pin IOs pinout
+* Power input from 4.5-28V
+
+## ***Specifications***
+--------------------------
+
+Parameter|Value
+---|---
+MCU|RP2040
+Clock Speed| flexible clock running up to 133 MHz
+Flash Memory|2MB
+RAM|264KB
+Operate Voltage| 4.5-28V
+Output Current @ 3.3V | 1A
+Input Interface | sub-D
+
+
+## ***Hardware Overview***
+--------------------------
+
+### Part List
+
+!!!Note
+    For transportation considerations, the plug-in components of the kit are not soldered by default. After you receive the kit, you need to do some soldering work. If necessary, you can also contact info@longan-labs.cc after purchasing the board, then we can send it to you after the board is soldered well.
+
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1030019/Details_of_CANBed-20.jpg)
+
+1. CANBed Dual PCBA x 1
+2. 6 Pin Terminal connector x 1
+3. 6 Pin Switch x 2
+4. 9x2 2.54 Header x 1
+5. 3x2 2.54 Header x 1
+
+
+###　Pin out
+
+[![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1030019/hw.png)](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1030019/hw.png)
+
+!!!Note
+    [Click](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1030019/hw.png) to get larger image.
+
+**1. GPIO - 9x2 I/O Pin OUT:** 
+
+The I/Os of RP2040 list out here, which is consist of,
+
+* 1 x UART
+* 1 x I2C
+* 4 x Analog Input(can be used us Digital IO)
+* 7 x Digital I/O
+
+**2. Micro USB connector for programming**
+
+**3. SPI Interface**
+
+**4. CAN1 RX/TX Indicator**
+
+LED blinks when there's data communication.
+
+**5. CAN1 120Ω Switch**
+
+<p style="text-align:center"><img src="https://github.com/Longan-Labs/OBD-II_Slaver_GPS_kit/raw/master/HS_CAN_Termination.gif" /></p>
+
+If you use this board on the end of the CAN bus, please put this switch to 120Ω. For more detail about the CAN bus protocol, please refer to the
+[NI CAN Physical Layer and Termination Guide](http://www.ni.com/white-paper/9759/en/)
+
+**6. 6Pin Terminal for CAN Interface**
+
+**7. BOOT**
+
+**8. RST**
+
+Click to reset the board.
+
+## ***Getting Started with Arduino IDE***
+--------------------------
+
+Here we use the Arduino IDE as a demonstration, through this chapter you can learn how to get started with CANBed Dual.
+You need a micro USB cable to connect the CANBed Dual to the computer.
+
+In this demo, CAN FD will send a frame to CAN 2.0 every 100ms.
+
+### ***Arduino IDE Steup***
+First download the Arduino IDE from https://www.arduino.cc/en/Main/Software. Arduino IDE can be installed and run on Windows, Linux, and Mac OS X operating systems. Download the installer or zip file (Windows only) and install (if you have the zip file, extract it to your Windows computer’s hard drive) it on your operating system.
+
+Once finished, start the Arduino IDE.
+
+Copy and paste the link below into the Additional Boards Manager URLs option in the Arduino IDE preferences (**File > Preferences**).
+
+    https://raw.githubusercontent.com/Longan-Labs/Longan-RP2040/main/package_rp2040_index.json
+
+Once done, click OK button to save the new preference settings.
+
+Now open the Boards Manager by navigating to the **Tools -> Board** menu.
+
+Select All from the Type drop-down menu. Then type longan in the top search bar. While typing, you will see the Longan RP2040 Boards package.
+
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/1030018/arduino-ide-setup-7.png)
+
+Click on the Longan RP2040 Boards by Longan Labs and then click on Install button.
+
+Once installed, close the Boards Manager window.
+
+
+### ***Download the install the library***
+
+Get the [Arduino library for CANBed Dual](https://github.com/Longan-Labs/CANBedDual_Arduino_Lib)
+
+Open the Arduino IDE, navigate to Sketch > Include Library > Add .ZIP Library to install the Library. 
+
+### ***Hardware Connection***
+
+Please conect CAN0H to CAN1H, CAN0L to CAN1L.
+
+### ***Open the code and upload it to the board***
+
+Open the Arduino IDE, here we open the ***CAN20_SendRecv*** example. This example can continuously send data to the CAN Bus.
+
+```Arduino
+// CANBED DUAL TEST EXAMPLE
+// CAN 0 Send, CAN 1 Recv
+
+#include <Wire.h>
+#include <stdio.h>
+#include "canbed_dual.h"
+
+CANBedDual CAN0(0);
+CANBedDual CAN1(1);
+
+
+void setup()
+{
+    Serial.begin(115200);
+    pinMode(18, OUTPUT);
+    
+    Wire1.setSDA(6);
+    Wire1.setSCL(7);
+    Wire1.begin();
+    
+    CAN0.init(500000);          // CAN0 baudrate: 500kb/s
+    CAN1.init(500000);          // CAN1 baudrate: 500kb/s
+}
+
+void loop()
+{
+    sendData();
+    
+    unsigned long id = 0;
+    int ext = 0;
+    int rtr = 0;
+    int fd = 0;
+    int len = 0;
+    
+    unsigned char dtaGet[100];
+
+    if(CAN1.read(&id, &ext, &rtr, &fd, &len, dtaGet))
+    {
+        Serial.println("CAN1 GET DATA");
+        Serial.print("id = ");
+        Serial.println(id);
+        Serial.print("ext = ");
+        Serial.println(ext);
+        Serial.print("rtr = ");
+        Serial.println(rtr);
+        Serial.print("fd = ");
+        Serial.println(fd);
+        Serial.print("len = ");
+        Serial.println(len);
+
+        for(int i=0; i<len; i++)
+        {
+            Serial.print(dtaGet[i]);
+            Serial.print("\t");
+        }
+        Serial.println();
+    }
+}
+
+void sendData()
+{
+    static unsigned int cnt = 0;
+    cnt++;
+    if(cnt > 99)cnt = 0;
+    unsigned char str[8];
+    for(int i=0; i<8; i++)str[i] = cnt;
+    CAN0.send(0x01, 0, 0, 0, 8, str);
+}
+
+// ENDIF
+```
+
+You need to select ***CANBed Dual*** on the Arduino IDE boards and select the correct COM port. Then you can upload the program to the CANBed Dual Dev board by pressing the Upolading button on Arduino IDE.
+
+After the uploading is done, open the Serial monitor, you will see data printed to the monitor.
+
+### ***Arduino Code***
+
+---------------------
+
+We provide an Arduino libraries for CANBed Dual
+
+* ***CAN20_SendRecv*** - Send and Recv a frame under CAN2.0
+* ***CANFD_SendRecv*** - Send and Recv a frame under CANFD
+* ***MaskandFilt*** - Receive a frame from CAN Bus with mask and filter setting
+
+
+### How to Use
+
+As the CANBed Dual uses the same chip as the Raspberry Pi Pico (RP2040), please to to [Getting Started with Pico](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf) for details.
+
+
+## ***FAQ***
+--------------------------
+
+!!!tip "I can't upload code to CANBed Dual"
+    * When the board is connected to the computer via the Micro USB cable, a new COM device will appear on the computer. If the new device does not appear on your computer, you can try a different USB cable or try another computer.
+
+!!!tip "The RX/TX led light up and never turn off"
+    * Check if the baudrate of CAN Bus is setting correct
+    * Try turning on/off the switch for the 120Ω terminal resistor
+    * Check if CANH and CANL is well connected, H to H and L to L
+
+!!!tip "How to find the tech support"
+    Please contact support@longan-labs.cc for technical support. Our technical support engineer will usually reply you within 24 hours on working days. In order to get faster support, we hope that when you send us an email, you need to include at least the following content,
+    
+    * When and how to buy the product
+    * Product version information
+    * Take a high-definition picture of the product you use, including the connection
+    * Describe in detail the problem you encountered and what kind of help you would like to get
+
+## ***Schematic Online Viewer***
+--------------------------
+
+<div class="altium-ecad-viewer" data-project-src="https://github.com/Longan-Labs/EAGLE_CANBED_DUAL/archive/refs/heads/main.zip" style="border-radius: 0px 0px 4px 4px; height: 500px; border-style: solid; border-width: 1px; border-color: rgb(241, 241, 241); overflow: hidden; max-width: 1280px; max-height: 700px; box-sizing: border-box;" />
+</div>
+
+## ***Reference***
+------------
+
+* [Arduino Library for CAN2.0](https://github.com/Longan-Labs/Aruino_CAN_BUS_MCP2515)
+* [Eagle File](https://github.com/Longan-Labs/EAGLE_CANBED_DUAL/archive/refs/heads/main.zip)
+* [Raspberry Pi Pico C/C++ SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)
+* [Raspberry Pi Pico Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf)
+* [Getting Started with Pico](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf)
