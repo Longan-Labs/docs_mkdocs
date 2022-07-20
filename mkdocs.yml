@@ -131,6 +131,7 @@ nav:
         - CAN BUS SHIELD: 1030016.md
               
   - ELECTRONIC:
+        - LoRa E5: lora_e5.md
         - IRduino: 1040001.md
         - Heelight Core: 1040002.md
         - Heelight Relay: 1040003.md

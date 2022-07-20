@@ -1,0 +1,175 @@
+# Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: Longan Docs
+site_description: Docs of Longan Labs
+site_author: Stephen Lo
+site_url: https://longan-labs.cc
+
+# Repository
+repo_name: Longan-Labs/docs_mkdocs
+repo_url: https://github.com/Longan-Labs/docs_mkdocs
+edit_uri: ""
+
+# Copyright
+copyright: 'Copyright &copy; 2017 Longan Labs'
+
+# Configuration
+theme:
+  name: 'material'
+  #custom_dir: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  feature:
+    tabs: true
+  palette:
+    primary: amber
+    accent: amber
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+#  logo:
+#    icon: "\uE80C"
+
+# Customization
+#extra:
+#  social:
+#    - type: globe
+#      link: http://struct.cc
+#    - type: github-alt
+#      link: https://github.com/squidfunk
+#    - type: twitter
+#      link: https://twitter.com/squidfunk
+#    - type: linkedin
+#      link: https://linkedin.com/in/squidfunk
+
+extra:
+  analytics:
+    provider: google
+    property: UA-101995557-1
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - 'javascripts/extra.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  
+# Page tree
+nav:
+  - ABOUT: 
+        - ABOUT: index.md
+        - LICENSE: license.md
+  
+  - CAN-BUS:
+        - SERIAL CAN BUS MODULE: 1030001.md
+        - I2C CAN BUS MODULE: 1030017.md
+        - CANBED V1: 1030008.md
+        - CANBED FD: 1030009.md
+        - CANBED M0: 1030014.md
+        - CANBED M4: 1030013.md
+        - CANBED RP2040: 1030018.md
+        - CANBED DUAL: 1030019.md
+        - OBD-II CAN-BUS DEV KIT: 1030002.md
+        - OBD-II CAN BUS GPS DEV KIT: 1030003.md
+#        - SERIAL CAN LITE: 1030011.md
+        - CAN-FD SHIELD: 1030012.md
+        - OBD-II RF DEV KIT: 1030015.md
+        - CAN BUS SHIELD: 1030016.md
+              
+  - ELECTRONIC:
+        - IRduino: 1040001.md
+        - Heelight Core: 1040002.md
+        - Heelight Relay: 1040003.md
+        - Keyboard: 1040004.md
+        - AHT20 Temp&Humi Sensor: 1040006.md
+        - GPS/BDS Module: 1040005.md
+        - AAA Battery Shield: 1040007.md
+        - Longan Core 01: 1040009.md
+        - Squama Ethernet: 1050001.md
+        - Squama Ethernet with CAN FD: 1050003.md
+        - Serial RF Module: 1040010.md
+        
+  - CARDS:
+        - Cards System Summary: cards-system-summary.md
+        - AAA Battery Card: 1016007.md
+        - Carduino 32U4: 1013007.md
+        - Game Board: 1017008.md
+        - Temperature Card: 1011001.md
+        - Buzzer Card: 1012002.md
+        - Light Sensor Card: 1011010.md
+        - Extension Board: 1017002.md
+        - Sensor Display Board: 1017007.md
+        - BME280 Card: 1011008.md
+        - OLED Display Card: 1014001.md
+        - Rotary Angle Card: 1011007.md
+        - Programmer Card: 1016006.md
+        - Carduino 328: 1013001.md
+        - Button Input Card: 1011027.md
+        - IR Receiver Card: 1011029.md
+        - Sound Sensor Card: 1011002.md
+        - PIR Sensor Card: 1011003.md
+        - RTC Card: 1011012.md
+        - 9-Dof Sensor Card: 1011021.md
+        - Motor Driver Card: 1012003.md
+        - Relay Card: 1012001.md
+        - Line Finder Card: 1011032.md
+
+
+# Google Analytics
+# google_analytics:
+#   - !!python/object/apply:os.getenv ["UA-101948128-1"]
+#   - auto
