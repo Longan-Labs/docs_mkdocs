@@ -116,6 +116,7 @@ nav:
   
   - CAN-BUS:
         - SERIAL CAN BUS MODULE: 1030001.md
+        - SERIAL CAN FD MODULE: 114992978.md
         - I2C CAN BUS MODULE: 1030017.md
         - CANBED V1: 1030008.md
         - CANBED FD: 1030009.md
