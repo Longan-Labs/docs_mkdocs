@@ -133,6 +133,7 @@ nav:
               
   - ELECTRONIC:
         - LoRa E5: lora_e5.md
+        - Wio ESP32 CAN Dev Kit: can_esp32.md
         - IRduino: 1040001.md
         - Heelight Core: 1040002.md
         - Heelight Relay: 1040003.md
