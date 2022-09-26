@@ -7,15 +7,15 @@ name: CANBED - ESP32 VERSION
 ## ***Introduction***
 --------------------------
 
-![](https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/1/0/102991697_front-05.jpg)
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/esp32_can/1.png)
 
-Wio Dual CAN FD Dev kit Wio-E5 CAN Development Kit is based on the ESP32C3 and Wio-E5 STM32WLE5JC Module, and supports CAN FD, CAN2.0 communication. It supports industrial standards, provides a waterproof case and comes with high extensibility and compatibility. It's ideal for car hacking and Long Range sensor network management.
+Wio ESP32 CAN Dev Kit is based on the ESP32C3 and Wio-E5 STM32WLE5JC Module, and supports CAN FD, CAN2.0 communication. It supports industrial standards, provides a waterproof case and comes with high extensibility and compatibility. It's ideal for car hacking and Long Range sensor network management.
 
 
 ## ***Features***
 --------------------------
 
-* Outstanding RF performance:  Powerful ESP32-C3 SoC
+* Outstanding RF performance: Powerful ESP32-C3 SoC
 * 2 Independent CAN FD Interface
 * Global Long Range frequency plan with long-distance transmission range to 10km(ideal value in open area)
 * Support industrial standards: a wide working temperature at -40 ℃ ~ 85℃, high sensitivity between -116.5 dBm ~ -136 dBm, and power output up to +20.8dBm at 3.3V
@@ -32,6 +32,13 @@ Wio Dual CAN FD Dev kit Wio-E5 CAN Development Kit is based on the ESP32C3 and W
 
 ## ***Part List***
 
+![](https://raw.githubusercontent.com/Longan-Labs/docs_mkdocs/master/docs/images/esp32_can/2.png)
+
+* Wio ESP32 CAN Dev Board x 1
+* 2.4G Wi-Fi Antenna for ESP32 
+* 915Mhz Antenna for Wio E5 module
+* Waterproof rubber stopper
+* Antenna Adapter for the 915Mhz antenna
 
 ## ***Arduino IDE Setup***
 --------------------------
@@ -67,7 +74,7 @@ Please refer to [Wiki for Wio-E5 Wireless Module](https://wiki.seeedstudio.com/L
 
 ### ***Download the install the library***
 
-Get the [Arduino library](https://github.com/Longan-Labs/CANBedDual_Arduino_Lib)
+Get the [Arduino library](https://github.com/Longan-Labs/Wio_Dual_CAN_Arduino-Lib)
 
 Open the Arduino IDE, navigate to Sketch > Include Library > Add .ZIP Library to install the Library. 
 
@@ -90,12 +97,10 @@ Open the Arduino IDE, here we open the ***CAN20_SendRecv*** example. This exampl
 CANBedDual CAN0(0);
 CANBedDual CAN1(1);
 
-
 void setup()
 {
     Serial.begin(115200);
-    pinMode(18, OUTPUT);
-    
+    Wire.begin();
     CAN0.init(500000);          // CAN0 baudrate: 500kb/s
     CAN1.init(500000);          // CAN1 baudrate: 500kb/s
 }
@@ -107,7 +112,7 @@ void loop()
     unsigned long id = 0;
     int ext = 0;
     int rtr = 0;
-    int fd = 0;
+    int fd  = 0;
     int len = 0;
     
     unsigned char dtaGet[100];
@@ -137,6 +142,10 @@ void loop()
 
 void sendData()
 {
+    static unsigned long timer_s = millis();
+    if(millis()-timer_s < 100)return;
+    timer_s = millis();
+    
     static unsigned int cnt = 0;
     cnt++;
     if(cnt > 99)cnt = 0;
