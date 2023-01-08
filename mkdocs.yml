@@ -130,6 +130,7 @@ nav:
         - CAN-FD SHIELD: 1030012.md
         - OBD-II RF DEV KIT: 1030015.md
         - CAN BUS SHIELD: 1030016.md
+        - CANBed with CASE Atmega32U4 Version: 1030022.md 
               
   - ELECTRONIC:
         - LoRa E5: lora_e5.md
